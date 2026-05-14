@@ -1,0 +1,59 @@
+# Java Substring Comparison
+
+This Java program finds the **lexicographically smallest** and **largest** substrings of a given string for a specified length `k`.
+
+## Problem Statement
+
+Given a string `s` and an integer `k`, find:
+
+- The smallest substring of length `k`
+- The largest substring of length `k`
+
+using lexicographical (dictionary) order.
+
+---
+
+## Example
+
+### Input
+
+
+---
+
+## How It Works
+
+1. Read the input string.
+2. Read the integer `k`.
+3. Generate all substrings of length `k`.
+4. Compare them lexicographically.
+5. Print the smallest and largest substrings.
+
+---
+
+## Code Snippet
+
+```java
+public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String s = scan.next();
+    int k = scan.nextInt();
+    scan.close();
+
+    System.out.println(getSmallestAndLargest(s, k));
+}
+Technologies Used
+Java
+Scanner Class
+String Methods
+substring()
+compareTo()
+How to Run
+Save the file as Solution.java
+Compile the program:
+javac Solution.java
+Run the program:
+java Solution
+Enter the input string and value of k.
+Author
+
+Created for Java String Substring Comparison practice.
